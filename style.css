@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red */
+}
+
+#lft{
+    width:55%;
+    min-height: inherit;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+#vdeo{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center;    */
+}
+
+#vdeo video{
+    width: 100%;
+    position: relative;
+}
+
+#lftnav{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    padding: 10px 30px;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+#lftnav>h5{
+    margin-left: 20px;
+    font-weight: 100; 
+}
+
+#lftshead{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+#lft_sh h5{
+    font-weight: 100;
+}
+
+#rght_sh{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+#rght_sh h5{
+    font-weight: 100;
+}
+
+#line{
+    width:40%;
+    height: 1px;
+    background-color: #ffff;
+    border-radius:2px ;
+}
+
+#lftsumm{
+    width:40%;
+    height: 35%;
+    position: absolute;
+    top: 44%;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Voyage";
+    padding: 30px;
+    color: #fff;
+    /* background-color: yellow; */
+}
+
+#lftbtm{
+    width:100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#lftbtm #btmlft a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+/* #btmrght{
+    display: flex;
+    width: 30%;
+    height: 30%;
+    background-color: yellow;
+} */
+
+.crcl{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 253, 253, 0.335);
+}
+
+
+#rght{
+    position: relative;
+    width: 45%;
+    min-height: inherit;
+    background-color: #F6EBE1;
+}
+
+#rghtnav{
+    width: 100%;
+    height: 30px;
+    /* background-color: red; */
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    color: rgba(138, 109, 109, 0.993);
+    justify-content: flex-end;
+}
+
+#one{
+    font-weight: 100;
+    color: black;
+}
+
+#two{
+    margin-left: 40px;    
+}
+
+#rghtnav h5{
+    font-weight: 100;
+}
+
+#vert{
+    width: 50%;
+    height: 5%;
+    /* background-color: red; */
+    position: absolute;
+    top: 78%;
+    right: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform-origin: 100% 0;
+    font-weight: 100;
+    transform: rotate(90deg);
+}
+
+#vert h5{
+    font-weight: 100;
+} 
+
+#line1{
+    width:40%;
+    height: 1px;
+    background-color: black;
+    border-radius:2px ;
+}
+
+#box1{
+    width: 30%;
+    height: 40%;
+    /* background-color: red; */
+    position: absolute;
+    top: 21%;
+    left: 43%;
+}
+#box1 video{
+    width: 100%;
+    height: 100%;
+}
+
+#box2{
+    width: 30%;
+    height: 30%;
+    /* background-color: red; */
+    position: absolute;
+    top: 66%;
+    left: 20%;
+    overflow: hidden;
+}
+
+#box2 video{
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    border: 1px solid black;
+    padding: 10px 50px;
+    background-color: transparent;
+    font-style: 12px;
+    position: absolute;
+    bottom:5%;
+    right: 5%;
+}
+
+@media (max-width:500px){
+    #main{
+        flex-direction: column;
+        display: flex;
+    }
+    #lft{
+        width: 100%;
+    }
+
+    #lftnav{
+        padding: 10px 20px;
+    }
+
+    #lftshead{
+        padding: 20px;
+        top: 36%;
+    }
+
+    #rght_sh{
+        transform-origin: 100% 0;
+        transform: rotate(90deg);
+        width: 40%;
+        top: 120px;
+        left: 60%;
+        position: absolute;
+        padding: 20px;
+    }
+
+    #lftsumm{
+        padding: 20px;
+        font-size: 40px;
+        top: 50%;
+    }
+
+    #lftbtm{
+        padding: 20px;
+        bottom: 3%;
+    }
+
+    #rght{
+        width: 100%;
+    }
+
+    #vert{
+        width: 80%;
+        top:70%;
+        right: 5%;
+    }
+
+    #box1{
+        width: 50%;
+        top: 20%;
+        left: 32%;
+    }
+
+    #box2{
+        left: 12%;
+        top: 62%;
+        width: 35%;
+        height: 30%;
+    }
+
+    button{
+        right: 8%;
+    }
+}
+
+
+/* @media (max-width:300px){
+    #main{
+        flex-direction: column;
+        display: flex;
+    }
+    #lft{
+        width: 100%;
+    }
+
+    #lftnav{
+        padding: 10px 20px;
+    }
+
+    #lftshead{
+        padding: 20px;
+        top: 36%;
+    }
+
+    #rght_sh{
+        transform-origin: 100% 0;
+        transform: rotate(90deg);
+        width: 40%;
+        top: 120px;
+        left: 60%;
+        position: absolute;
+        padding: 20px;
+    }
+
+    #lftsumm{
+        padding: 20px;
+        font-size: 40px;
+        top: 50%;
+    }
+
+    #lftbtm{
+        padding: 20px;
+        bottom: 3%;
+    }
+
+    #rght{
+        width: 100%;
+    }
+
+    #vert{
+        width: 100%;
+        top:60%;
+        right: 5%;
+    }
+
+    #box1{
+        width: 50%;
+        top: 20%;
+        left: 32%;
+    }
+
+    #box2{
+        left: 12%;
+        top: 62%;
+        width: 35%;
+        height: 30%;
+    }
+
+    button{
+        right: 8%;
+    }
+} */
